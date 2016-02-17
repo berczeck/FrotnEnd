@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/App/Main.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div ng-app="HelloWorld"> 
+        <div ng-controller="MainController">
+            {{ subject }}
+            {{ description }}
+            <div>
+                Two times <input ng-model="num"> equals {{ double(num) }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
